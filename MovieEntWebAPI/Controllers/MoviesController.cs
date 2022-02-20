@@ -26,7 +26,7 @@ namespace MovieEntWebAPI.Controllers
 
         // GET: api/Movies
         //DON
-        [HttpGet]
+        [HttpGet("movies/getmovies")]
         public async Task<ActionResult<IEnumerable<MovieDto>>> GetMovie()
         {
             return await _context.Movie.Select(movie=>movie.AsDto()).ToListAsync();
@@ -34,7 +34,7 @@ namespace MovieEntWebAPI.Controllers
 
         // GET: api/Movies/5
         //DONE
-        [HttpGet("{movieId}")]
+        [HttpGet("getmovie/{movieId}")]
         public async Task<ActionResult<MovieDto>> GetMovie(Guid movieId)
         {
             var movie = await _context.Movie.FindAsync(movieId);
@@ -48,7 +48,7 @@ namespace MovieEntWebAPI.Controllers
         }
 
         // PUT: api/Movies/5       
-        [HttpPut("{movieId}")]
+        [HttpPut("updatemovie/{movieId}")]
         public async Task<IActionResult> PutMovie(Guid movieId, UpdateMovieDto updateMovieDto)
         {
             if (!MovieExists(movieId))
@@ -90,8 +90,8 @@ namespace MovieEntWebAPI.Controllers
 
         // POST: api/Movies
         //DONE
-        [HttpPost("{categoryId}")]
-        public async Task<ActionResult<Movie>> PostMovie(Guid categoryId, CreateMovieDto createMovieDto)
+        [HttpPost("postmovie/{categoryId}")]
+        public async Task<ActionResult<MovieDto>> PostMovie(Guid categoryId, CreateMovieDto createMovieDto)
         {
             if (!CategoryExists(categoryId))
                 return BadRequest("Category Id Doesn't Exist");
@@ -110,11 +110,11 @@ namespace MovieEntWebAPI.Controllers
             _context.Movie.Add(movie);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetMovie", new { id = movie.Id }, movie);
+            return CreatedAtAction("GetMovie", new { id = movie.Id }, movie.AsDto());
         }
 
         // DELETE: api/Movies/5
-        [HttpDelete("{movieId}")]
+        [HttpDelete("deletemovie/{movieId}")]
         public async Task<IActionResult> DeleteMovie(Guid movieId)
         {
             var movie = await _context.Movie.FindAsync(movieId);

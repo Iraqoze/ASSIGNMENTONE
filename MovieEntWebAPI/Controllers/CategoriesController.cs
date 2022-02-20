@@ -26,7 +26,7 @@ namespace MovieEntWebAPI.Controllers
 
         // GET: api/Categories
         //DONE
-        [HttpGet]
+        [HttpGet("/getcategories")]
         public async Task<ActionResult<IEnumerable<CategoryDto>>> GetCategory()
         {
             return await _context.Category.Select(cat=>cat.AsDto()).ToListAsync();
@@ -34,7 +34,7 @@ namespace MovieEntWebAPI.Controllers
 
         // GET: api/Categories/5
         //DONE
-        [HttpGet("{categoryId}")]
+        [HttpGet("getcategory/{categoryId}")]
         public async Task<ActionResult<CategoryDto>> GetCategory(Guid categoryId)
         {
             var category = await _context.Category.FindAsync(categoryId);
@@ -49,7 +49,7 @@ namespace MovieEntWebAPI.Controllers
 
         // PUT: api/Categories/5
         // DONE
-        [HttpPut("{categoryId}")]
+        [HttpPut("updatecategory/{categoryId}")]
         public async Task<IActionResult> PutCategory(Guid categoryId, UpdateCategoryDto updateCategoryDto)
         {
 
@@ -87,7 +87,7 @@ namespace MovieEntWebAPI.Controllers
 
         // POST: api/Categories
         //DONE
-        [HttpPost]
+        [HttpPost("/categories/postcategory")]
         public async Task<ActionResult<CategoryDto>> PostCategory(CreateCategoryDto createCategoryDto)
         {
             var category = new Category{
@@ -104,7 +104,7 @@ namespace MovieEntWebAPI.Controllers
 
         // DELETE: api/Categories/5
         //DONE
-        [HttpDelete("{categoryId}")]
+        [HttpDelete("deletecategory/{categoryId}")]
         public async Task<IActionResult> DeleteCategory(Guid categoryId)
         {
             var category = await _context.Category.FindAsync(categoryId);

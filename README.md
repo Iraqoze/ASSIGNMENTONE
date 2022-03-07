@@ -99,14 +99,14 @@
   <p>Update Movie</p>
   <h3>PUT: movies/updatemovie/{MovieId}<h3>
     
-   {
-      "title": "string",
-      "description": "string",
-      "releaseDate": "2022-03-07T11:18:27.421Z",
-      "videoLink": "string",
-      "thumbnailImage": "string",
-      "categoryId": "3fa85f64-5717-4562-b3fc-2c963f66afa6"
-    }
+{
+  "title": "string",
+  "description": "string",
+  "releaseDate": "2022-03-07T11:30:14.646Z",
+  "videoLink": "string",
+  "thumbnailImage": "string",
+  "categoryId": "3fa85f64-5717-4562-b3fc-2c963f66afa6"
+}
     
    <p>Delete Movie</p>
   <h3>GET: movies/deletemovie/{MovieId}<h3> 

@@ -29,7 +29,7 @@
         }    
 
     
-   <h1>Post Category</h1>
+   <p>Post Category</p>
   <h3>POST: categories/postcategory<h3>
     {
       "title": "string",
@@ -49,5 +49,64 @@
   
 <h1> Movie Controller</h1>
 <p> This Movie Controller performs all the CRUD related operations on the Movie Table</p>
+    
+    
+    <h1>Getting All Movies</h1>
+  <h3>GET: movies/getmovies<h3>
+      
+    [
+      {
+        "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+        "title": "string",
+        "description": "string",
+        "releaseDate": "2022-03-07T11:16:21.055Z",
+        "videoLink": "string",
+        "thumbnailImage": "string",
+        "categoryId": "3fa85f64-5717-4562-b3fc-2c963f66afa6"
+      }
+    ]
+    
+  
+  <p>Getting Specific Movie</p>
+  <h3>GET: movies/getmovie/{MovieId}<h3>
+    
+    {
+      "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+      "title": "string",
+      "description": "string",
+      "releaseDate": "2022-03-07T11:17:03.067Z",
+      "videoLink": "string",
+      "thumbnailImage": "string",
+      "categoryId": "3fa85f64-5717-4562-b3fc-2c963f66afa6"
+    }
+    
+   <p>Post Movie</p>
+  <h3>POST: movies/postmovie/{categoryId}<h3>
+    
+    {
+      "title": "string",
+      "description": "string",
+      "releaseDate": "2022-03-07T11:17:49.756Z",
+      "videoLink": "string",
+      "thumbnailImage": "string"
+    }
+    
+    
+  <p>Update Movie</p>
+  <h3>PUT: movies/updatemovie/{MovieId}<h3>
+   {
+      "title": "string",
+      "description": "string",
+      "releaseDate": "2022-03-07T11:18:27.421Z",
+      "videoLink": "string",
+      "thumbnailImage": "string",
+      "categoryId": "3fa85f64-5717-4562-b3fc-2c963f66afa6"
+    }
+    
+   <p>Delete Movie</p>
+  <h3>GET: movies/deletemovie/{MovieId}<h3> 
+    
+    
+    
 <h1> UserAuth Controller</h1>
 <p> This UserAuth Controller performs all the user related operations</p>

@@ -11,38 +11,40 @@
   
   <h1>Getting All Categories</h1>
   <h3>GET: categories/getcategories<h3>
-       [
-          {
-            "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
-            "title": "string",
-            "description": "string"
-          },
-       ]
   
+  [
+    {
+      "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+      "title": "string",
+      "description": "string"
+    }
+  ]
   
   <p>Getting Specific Category</p>
   <h3>GET: categories/getcategory/{CategoryId}<h3>
-     {
-        "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
-        "title": "string",
-        "description": "string"
-     }    
-
+   
+   {
+      "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+      "title": "string",
+      "description": "string"
+    }
     
    <p>Post Category</p>
   <h3>POST: categories/postcategory<h3>
+  
     {
       "title": "string",
       "description": "string"
     }
+  
     
   <p>Update Category</p>
   <h3>PUT: categories/updatecategory/{CategoryId}<h3>
     
-    {
+   {
       "title": "string",
       "description": "string"
-    }
+   }
     
    <p>Delete Category</p>
   <h3>GET: categories/deletecategory/{CategoryId}<h3> 
@@ -53,6 +55,7 @@
     
     
     <h1>Getting All Movies</h1>
+    
   <h3>GET: movies/getmovies<h3>
       
     [

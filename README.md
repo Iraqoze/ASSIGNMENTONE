@@ -119,30 +119,30 @@
   <p>Login User </p>
 
   <h3>POST: userauth/loginuser </h3> 
-    {
-      "email": "user@example.com",
-      "password": "string",
-      "rememberMe": true
-    }
+      {
+        "email": "user@example.com",
+        "password": "string",
+        "rememberMe": true
+      }
 
   <p>Register User </p>
   <h3>POST: userauth/registeruser </h3>     
-    {
-      "firstname": "string",
-      "lastname": "string",
-      "email": "user@example.com",
-      "phoneNumber": "string",
-      "password": "string",
-      "confirmPassword": "string"
-    }
+      {
+        "firstname": "string",
+        "lastname": "string",
+        "email": "user@example.com",
+        "phoneNumber": "string",
+        "password": "string",
+        "confirmPassword": "string"
+      }
 
   <p>Update User </p>
   <h3>POST: userauth/updateuser </h3>   
-    {
-      "firstname": "string",
-      "lastname": "string",
-      "id": "string",
-      "username": "string",
-      "email": "string",
-      "phoneNumber": "string"
-    }
+      {
+        "firstname": "string",
+        "lastname": "string",
+        "id": "string",
+        "username": "string",
+        "email": "string",
+        "phoneNumber": "string"
+      }

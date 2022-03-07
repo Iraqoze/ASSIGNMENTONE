@@ -56,7 +56,7 @@
     
     <h1>Getting All Movies</h1>
     
-  <h3>GET: movies/getmovies<h3>
+  <h3>GET: movies/getmovies</h3>
       
     [
       {
@@ -116,18 +116,17 @@
 <h1> UserAuth Controller</h1>
 <p> This UserAuth Controller performs all the user related operations</p>
  
-<p>Login User <p>
-<h3>POST: userauth/loginuser <h3>    
- 
+<p>Login User </p>
+    
+<h3>POST: userauth/loginuser </h3> 
   {
     "email": "user@example.com",
     "password": "string",
     "rememberMe": true
   }
   
-<p>Register User <p>
-<h3>POST: userauth/registeruser <h3>   
-  
+<p>Register User </p>
+<h3>POST: userauth/registeruser </h3>     
   {
     "firstname": "string",
     "lastname": "string",
@@ -137,9 +136,8 @@
     "confirmPassword": "string"
   }
   
-<p>Update User <p>
-<h3>POST: userauth/updateuser <h3>   
-  
+<p>Update User </p>
+<h3>POST: userauth/updateuser </h3>   
   {
     "firstname": "string",
     "lastname": "string",

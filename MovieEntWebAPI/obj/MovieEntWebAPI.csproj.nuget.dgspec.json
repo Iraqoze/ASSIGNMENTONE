@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\iraqo\\Desktop\\GROUP5 Project\\MovieEntWebAPI\\MovieEntWebAPI\\MovieEntWebAPI.csproj": {}
+    "C:\\Users\\iraqo\\Desktop\\Projects\\Movie-Entertainment-Group5\\MovieEntWebAPI\\MovieEntWebAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\iraqo\\Desktop\\GROUP5 Project\\MovieEntWebAPI\\MovieEntWebAPI\\MovieEntWebAPI.csproj": {
+    "C:\\Users\\iraqo\\Desktop\\Projects\\Movie-Entertainment-Group5\\MovieEntWebAPI\\MovieEntWebAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\iraqo\\Desktop\\GROUP5 Project\\MovieEntWebAPI\\MovieEntWebAPI\\MovieEntWebAPI.csproj",
+        "projectUniqueName": "C:\\Users\\iraqo\\Desktop\\Projects\\Movie-Entertainment-Group5\\MovieEntWebAPI\\MovieEntWebAPI.csproj",
         "projectName": "MovieEntWebAPI",
-        "projectPath": "C:\\Users\\iraqo\\Desktop\\GROUP5 Project\\MovieEntWebAPI\\MovieEntWebAPI\\MovieEntWebAPI.csproj",
+        "projectPath": "C:\\Users\\iraqo\\Desktop\\Projects\\Movie-Entertainment-Group5\\MovieEntWebAPI\\MovieEntWebAPI.csproj",
         "packagesPath": "C:\\Users\\iraqo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\iraqo\\Desktop\\GROUP5 Project\\MovieEntWebAPI\\MovieEntWebAPI\\obj\\",
+        "outputPath": "C:\\Users\\iraqo\\Desktop\\Projects\\Movie-Entertainment-Group5\\MovieEntWebAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\iraqo\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -39,34 +39,6 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "dependencies": {
-            "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": {
-              "target": "Package",
-              "version": "[6.0.2, )"
-            },
-            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
-              "target": "Package",
-              "version": "[6.0.2, )"
-            },
-            "Microsoft.EntityFrameworkCore.SqlServer": {
-              "target": "Package",
-              "version": "[6.0.2, )"
-            },
-            "Microsoft.EntityFrameworkCore.Tools": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[6.0.2, )"
-            },
-            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
-              "target": "Package",
-              "version": "[6.0.2, )"
-            },
-            "Swashbuckle.AspNetCore": {
-              "target": "Package",
-              "version": "[6.2.3, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",
@@ -77,15 +49,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.406\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -3,7 +3,7 @@
 
 <h1>Getting Started</h1><br>
 
-<b><h3>Root Url: https://movieentx.azurewebsites.net/api/ </h3></b><br>  
+<b><h3>Root Url: https://localhost:7076/api/ </h3></b><br>  
   
   
 <h1> Category Controller</h1>
